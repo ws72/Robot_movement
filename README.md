@@ -58,11 +58,11 @@ In the root directory of this project, run the following command to build the ap
 ## Docs
 
 * package: com.ioof.robotMovement
-            ** Solution class: entry of application.
-            ** Robot class: creating a singleton of robot object, move function, rotation with left or right function, report current position of robot function.
-            ** Direction class: enumeration NORTH("NORTH"), WEST("WEST"), EAST("EAST"), SOUTH("SOUTH").
-            ** Rotation class: enumeration left and right.
-            ** Position class: position x and y of robot.
+            * Solution class: entry of application.
+            * Robot class: creating a singleton of robot object, move function, rotation with left or right function, report current position of robot function.
+            * Direction class: enumeration NORTH("NORTH"), WEST("WEST"), EAST("EAST"), SOUTH("SOUTH").
+            * Rotation class: enumeration left and right.
+            * Position class: position x and y of robot.
 
 * package: com.ioof.robotMovement.exception
             * RobotException: Robot exception.
