@@ -51,7 +51,7 @@ In the root directory of this project, run the following command to build the ap
 
 `maven build`
 
-#Application class map and detail:
+# Application class map and detail:
 
 package: com.ioof.robotMovement
             Solution class: entry of application.
