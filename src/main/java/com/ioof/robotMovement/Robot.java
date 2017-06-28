@@ -40,7 +40,7 @@ public class Robot {
     private static Robot robot;
 
     private static boolean verifyPosition(Position pos){
-        return pos.getX()>=0 && pos.getY()>=0;
+        return pos.getX()>=0 && pos.getY()>=0 && pos.getX()<=4 && pos.getY()<=4;
     }
 
     public static Robot getInstance(Direction currentDirection, Position pos) throws PositionOutOfRangeException {
