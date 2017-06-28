@@ -26,8 +26,10 @@ public class Solution {
 
             System.out.println("_instructions:"+_instructions);
 
+            // Input PLACE
             if(_instructions.equals(PLACE) && robot==null){
                 _instructions = scanner.next();
+                // validate valid input
                 String reg= "^[0-4],[0-4],[NORTH|WEST|EAST|SOUTH]*$";
                 if(Pattern.matches(reg, _instructions)){
                     String[] instructionArray = _instructions.split(",");
@@ -42,16 +44,15 @@ public class Solution {
                 System.out.println("Please input a position of initial placement of the toy robot to create a robot.");
                 continue;
             }
-
+            // Input MOVE
             if(_instructions.equals(MOVE) && robot!=null){
                 robot.move();
             }
+            // Input LEFT or RIGHT
             if(_instructions.equals(LEFT) || _instructions.equals(RIGHT)){
                 robot.rotate(Rotation.valueOf(_instructions));
             }
-            if(_instructions.equals(RIGHT) && robot!=null){
-                robot.move();
-            }
+            // Input REPORT
             if(_instructions.equals(REPORT) && robot!=null){
                 robot.report();
                 break;
