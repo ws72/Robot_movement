@@ -25,6 +25,9 @@ public class TestRobot {
 
     Robot robot;
 
+    /**
+     * constructor
+     */
     public TestRobot(){
         try {
             robot = Robot.getInstance(Direction.valueOf(EAST),new Position(0,0));
@@ -33,7 +36,9 @@ public class TestRobot {
         }
     }
 
-//test position
+    /**
+     * test position
+     */
     @Test
     public void testPositionOutOfRangeByNagetiveX(){
         try {
@@ -92,7 +97,9 @@ public class TestRobot {
         }
     }
 
-//left
+    /**
+     * test left rotation
+     */
     @Test
     public void testRotateLeftWithEast() throws PositionOutOfRangeException {
         robot.setCurrentDirection(Direction.valueOf(EAST));
@@ -121,7 +128,9 @@ public class TestRobot {
         robot.rotate(Rotation.valueOf(LEFT));
         assertEquals(Direction.WEST.toString(),robot.getCurrentDirection().toString());
     }
-//right
+    /**
+     * test right rotation
+     */
     @Test
     public void testRotateRightWithEast() throws PositionOutOfRangeException {
         robot.setCurrentDirection(Direction.valueOf(EAST));
@@ -151,8 +160,9 @@ public class TestRobot {
         assertEquals(Direction.EAST.toString(),robot.getCurrentDirection().toString());
     }
 
-// test move
-
+    /**
+     * test move
+     */
     @Test
     public void testMoveWithEast() throws PositionOutOfRangeException {
         robot.setCurrentDirection(Direction.valueOf(EAST));
