@@ -2,6 +2,7 @@ package com.ioof.robotMovement.exception;
 
 /**
  * Created by songwang on 16/6/17.
+ * Robot Exception
  */
 public class RobotException extends Exception {
     public RobotException() {
